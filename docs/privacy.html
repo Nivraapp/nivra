@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Nivra</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #F5F5FA; color: #1A1A2E; line-height: 1.7; }
+        .container { max-width: 700px; margin: 0 auto; padding: 40px 24px; }
+        h1 { font-size: 32px; margin-bottom: 8px; }
+        .date { color: #6B7280; font-size: 14px; margin-bottom: 32px; }
+        h2 { font-size: 20px; margin: 28px 0 12px; color: #7C3AED; }
+        p, li { font-size: 15px; color: #374151; margin-bottom: 12px; }
+        ul { padding-left: 20px; }
+        a { color: #7C3AED; }
+        .back { display: inline-block; margin-bottom: 20px; color: #6B7280; text-decoration: none; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="back" href="index.html">← Back to Nivra</a>
+        <h1>Privacy Policy</h1>
+        <p class="date">Last updated: April 8, 2026</p>
+
+        <h2>1. Introduction</h2>
+        <p>Nivra ("we", "our", "us") respects your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use the Nivra mobile application.</p>
+
+        <h2>2. Information We Collect</h2>
+        <p><strong>Anonymous Account:</strong> We create an anonymous account using Firebase Authentication. No email, name, or personal details are required to use Nivra.</p>
+        <p><strong>Audio Recordings:</strong> Audio files you record are stored on your device and optionally uploaded to Firebase Cloud Storage for transcription processing. Audio is processed and not retained after transcription is complete.</p>
+        <p><strong>Transcriptions & AI Content:</strong> Transcribed text, summaries, quizzes, and flashcards are stored in Firebase Firestore associated with your anonymous user ID.</p>
+        <p><strong>Usage Data:</strong> We track transcription minutes used per month to enforce plan limits. No personal usage analytics or behavioral tracking is performed.</p>
+        <p><strong>Subscription Data:</strong> Subscription status is managed through RevenueCat and Apple's App Store. We do not process or store payment information directly.</p>
+
+        <h2>3. Third-Party Services</h2>
+        <p>We use the following third-party services:</p>
+        <ul>
+            <li><strong>Firebase (Google)</strong> - Authentication, Cloud Firestore database, Cloud Storage, Cloud Functions</li>
+            <li><strong>Groq</strong> - Audio transcription (Whisper V3 Turbo)</li>
+            <li><strong>Google Gemini</strong> - AI-powered summaries, quizzes, flashcards, and key points</li>
+            <li><strong>RevenueCat</strong> - Subscription management</li>
+            <li><strong>RapidAPI</strong> - YouTube transcript retrieval (server-side only)</li>
+        </ul>
+        <p>Each service has its own privacy policy. Audio and text data sent to Groq and Gemini is processed according to their respective privacy policies and is not used to train their models.</p>
+
+        <h2>4. Data Storage & Security</h2>
+        <p>Your data is stored securely using Firebase services with encryption in transit and at rest. Access to your data is restricted to your anonymous user ID through Firebase Security Rules. No other users can access your recordings or content.</p>
+
+        <h2>5. Data Retention & Deletion</h2>
+        <p>Your data is retained as long as your account exists. Since accounts are anonymous, data is tied to your device via Keychain. To delete your data, contact us at <a href="mailto:support@nivra.app">support@nivra.app</a> and we will remove all associated data within 30 days.</p>
+
+        <h2>6. Children's Privacy</h2>
+        <p>Nivra is not intended for children under 13 years of age. We do not knowingly collect information from children under 13. If you believe a child has provided us with data, please contact us.</p>
+
+        <h2>7. Advertising & Tracking</h2>
+        <p>Nivra does not display advertisements and does not use any tracking or analytics SDKs. We do not share your data with advertisers or data brokers.</p>
+
+        <h2>8. Your Rights</h2>
+        <p>Under GDPR, CCPA, and similar regulations, you have the right to:</p>
+        <ul>
+            <li>Access your personal data</li>
+            <li>Request deletion of your data</li>
+            <li>Request a copy of your data</li>
+            <li>Object to data processing</li>
+        </ul>
+        <p>To exercise these rights, contact us at <a href="mailto:support@nivra.app">support@nivra.app</a>.</p>
+
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. The updated version will be indicated by the "Last updated" date at the top of this page.</p>
+
+        <h2>10. Contact Us</h2>
+        <p>If you have questions about this Privacy Policy, contact us at:<br>
+        <a href="mailto:support@nivra.app">support@nivra.app</a></p>
+    </div>
+</body>
+</html>
