@@ -21,7 +21,7 @@
     <div class="container">
         <a class="back" href="index.html">← Back to Nivra</a>
         <h1>Privacy Policy</h1>
-        <p class="date">Last updated: April 8, 2026</p>
+        <p class="date">Last updated: April 14, 2026</p>
 
         <h2>1. Introduction</h2>
         <p>Nivra ("we", "our", "us") respects your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use the Nivra mobile application.</p>
@@ -33,16 +33,51 @@
         <p><strong>Usage Data:</strong> We track transcription minutes used per month to enforce plan limits. No personal usage analytics or behavioral tracking is performed.</p>
         <p><strong>Subscription Data:</strong> Subscription status is managed through RevenueCat and Apple's App Store. We do not process or store payment information directly.</p>
 
-        <h2>3. Third-Party Services</h2>
-        <p>We use the following third-party services:</p>
+        <h2>3. Third-Party AI Services & Data Sharing</h2>
+        <p>Nivra uses third-party AI services to provide its core features. Before using any AI feature for the first time, the app asks for your explicit consent. Below is a detailed breakdown of what data is shared, with whom, and for what purpose:</p>
+
+        <h3 style="font-size:17px; margin:20px 0 8px; color:#4B5563;">3.1 Groq Inc. — Audio Transcription</h3>
         <ul>
-            <li><strong>Firebase (Google)</strong> - Authentication, Cloud Firestore database, Cloud Storage, Cloud Functions</li>
-            <li><strong>Groq</strong> - Audio transcription (Whisper V3 Turbo)</li>
-            <li><strong>Google Gemini</strong> - AI-powered summaries, quizzes, flashcards, and key points</li>
-            <li><strong>RevenueCat</strong> - Subscription management</li>
-            <li><strong>RapidAPI</strong> - YouTube transcript retrieval (server-side only)</li>
+            <li><strong>Data sent:</strong> Your audio recording file</li>
+            <li><strong>Purpose:</strong> Convert speech to text using the Whisper V3 Turbo AI model</li>
+            <li><strong>Retention:</strong> Audio is processed in real-time and is not stored by Groq after transcription completes</li>
+            <li><strong>AI training:</strong> Your audio is NOT used to train AI models</li>
+            <li>Privacy policy: <a href="https://groq.com/privacy-policy/">groq.com/privacy-policy</a></li>
         </ul>
-        <p>Each service has its own privacy policy. Audio and text data sent to Groq and Gemini is processed according to their respective privacy policies and is not used to train their models.</p>
+
+        <h3 style="font-size:17px; margin:20px 0 8px; color:#4B5563;">3.2 Groq Inc. — AI Text Processing</h3>
+        <ul>
+            <li><strong>Data sent:</strong> Your transcription text (the text output from transcription)</li>
+            <li><strong>Purpose:</strong> Generate AI summaries, quizzes, flashcards, and key points from your transcriptions</li>
+            <li><strong>Retention:</strong> Text is processed in real-time and is not stored after generation completes</li>
+            <li><strong>AI training:</strong> Your text is NOT used to train AI models</li>
+        </ul>
+
+        <h3 style="font-size:17px; margin:20px 0 8px; color:#4B5563;">3.3 Google Firebase</h3>
+        <ul>
+            <li><strong>Data sent:</strong> Audio files (temporarily for transcription), transcriptions, AI-generated content</li>
+            <li><strong>Purpose:</strong> Secure cloud storage, user authentication (anonymous), and server-side processing via Cloud Functions</li>
+            <li><strong>Retention:</strong> Audio files are deleted from cloud storage after transcription. Transcriptions and AI content are retained until you delete them.</li>
+            <li>Privacy policy: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+        </ul>
+
+        <h3 style="font-size:17px; margin:20px 0 8px; color:#4B5563;">3.4 RapidAPI — YouTube Transcripts</h3>
+        <ul>
+            <li><strong>Data sent:</strong> YouTube video IDs (not your personal data)</li>
+            <li><strong>Purpose:</strong> Retrieve publicly available video transcripts/subtitles</li>
+            <li><strong>Retention:</strong> No user data is stored by RapidAPI</li>
+            <li>Privacy policy: <a href="https://rapidapi.com/privacy/">rapidapi.com/privacy</a></li>
+        </ul>
+
+        <h3 style="font-size:17px; margin:20px 0 8px; color:#4B5563;">3.5 RevenueCat</h3>
+        <ul>
+            <li><strong>Data sent:</strong> Anonymous user ID and subscription status</li>
+            <li><strong>Purpose:</strong> Manage in-app subscriptions and purchases</li>
+            <li><strong>Retention:</strong> Subscription data is retained per RevenueCat's policies</li>
+            <li>Privacy policy: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+        </ul>
+
+        <p style="margin-top:20px;"><strong>Important:</strong> All data transmitted to third-party services is sent over encrypted connections (HTTPS/TLS). None of these services use your data to train their AI models. You are asked for explicit consent before any data is shared with AI services.</p>
 
         <h2>4. Data Storage & Security</h2>
         <p>Your data is stored securely using Firebase services with encryption in transit and at rest. Access to your data is restricted to your anonymous user ID through Firebase Security Rules. No other users can access your recordings or content.</p>
